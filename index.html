@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>CROSSGYM ROSARIO</title>
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <ul>
+                <li class="logo">CROSSGYM</li>
+                <li><a href="./index.html">Inicio</li></a>
+                <li><a href="./paginas/planes.html">Planes</li></a>
+                <li><a href="./paginas/equipo.html">Equipo</li></a>
+                <li><a href="./paginas/contacto.html">Contacto</li></a>
+                <li><a href="./paginas/redes.html">Redes</li></a>
+            </ul>
+            <label for="menu" class="bar">
+                <input id="menu" type="checkbox">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </label>
+        </nav>
+    </header>
+
+    <main>
+
+      <div class="gym_title">
+         <h1>Que estas esperando?</h1><!-- centrar texto de bienvenida -->
+         <p class="main_title">Contamos con una amplia sala de musculación y profesionales capacitados para armar la mejor rutina de entrenamiento</p>
+      </div>
+
+      <a class="buttonStart" href="./paginas/planes.html">
+      <div class="buttonPosition">
+         <button>Empeza ya</button>
+      </div></a>
+
+
+    </main>
+
+    <!-- tarjetas con actividades del gimnasio -->
+
+    <section>
+        <h2>Clases</h2>
+        
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./img/actividades/boxeo.jpg" class="card-img-top" alt="boxeo">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Boxeo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./img/actividades/funcional.jpg" class="card-img-top" alt="funcional">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Entrenamiento Funcional</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./img/actividades/mma.jpg" class="card-img-top" alt="MMA">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">MMA</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./img/actividades/taekwondo.jpg" class="card-img-top" alt="taekwondo">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Taekwondo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="./img/actividades/zumba.jpg" class="card-img-top" alt="zumba">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Zumba</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <!-- mapa -->
+
+    <div class="map__container">
+        <span>
+            <p class="p__maps">Nos encontramos aca</p>
+        </span>
+        <span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13389.759736029488!2d-60.7157828!3d-32.9657932!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x392b75d8a4075dde!2sCross%20Gym!5e0!3m2!1ses-419!2sar!4v1661812987066!5m2!1ses-419!2sar" height="300" width="300" ></iframe>
+        </span>
+    </div>
+
+    <section>
+        <h3>Feedback</h3>
+        <p class="opinion">Dejanos una opinion</p>
+        <form class="form">
+            <label><input type="name" name="name" placeholder="Nombre"></label>
+            <label><input type="email" name="email" placeholder="Email"></label>
+            <textarea ></textarea>
+        </form>
+        
+    </section>
+
+
+    <!-- pie de pagina -->
+
+    <footer>
+        <div class="foot">
+            <span class="foot__container">
+                <img src="img/gym_logo.png" alt="gym_logo">
+            </span>
+        </div>
+    </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
