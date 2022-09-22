@@ -123,10 +123,6 @@ input[type]:checked~span.middle {
         display: flex;
     }
 
-    nav ul li {
-        display: ne; 
-    }
-
     nav {
         display: flex;
         flex-direction: column;
@@ -213,6 +209,8 @@ h2 {
 .card {
     transition: 0.8s;
 }
+
+/* corregir hover a partir de 800px*/
 
 .card:hover {
     width: 23rem;
