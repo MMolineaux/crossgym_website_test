@@ -219,17 +219,38 @@ section.contacto {
     font-weight: bold;
 }
 
-.redes_title {
+.redes_body--container {
+    background-color: aquamarine;
+}
+
+.redes_section--title {
     font-size: 45px;
     font-weight: bold;
-    margin: 0 27%;
+    display: flex;
+    justify-content: center;
+}
+
+.redes_section--descr {
+    display: flex;
+    justify-content: center;
+    line-height: 45px;
+}
+
+.redes_ico {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20px;
+    background-color: #fff;
+    margin: 0 80px 0 80px;
+    padding: 80px;
+}
+
+.redes_ico--descr {
     display: inline;
 }
 
-
 .redes_ico img {
     width: 50px;
-    display: inline-block;
 }
 
 .foot {
