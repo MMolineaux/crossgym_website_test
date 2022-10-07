@@ -20,8 +20,6 @@
                 <li class="nav-li"><a href="./paginas/contacto.html">Contacto</li></a>
                 <li class="nav-li"><a href="./paginas/redes.html">Redes</li></a>
             </ul>
-            <!-- falta dar funcionalidad al menu hamburguesa -->
-            
         </nav>
     </header>
 
@@ -33,17 +31,19 @@
          <p class="main_title">Contamos con una amplia sala de musculación y profesionales capacitados para armar la mejor rutina de entrenamiento</p>
       </div>
 
-      <a class="buttonStart" href="./paginas/planes.html">
       <div class="buttonPosition">
-          <button>Empeza ya</button>
-      </div></a>
+        <div class="buttonContainer">
+            <a class="buttonStart" href="./paginas/planes.html">
+                <button>Empeza ya</button>
+        </div></a>
+      </div>
 
 
     </main>
 
     <!-- tarjetas con actividades del gimnasio -->
 
-    <section>
+    <section class="container__clases--cards">
         <h2>Clases</h2>
         <div class="container">
             <div class="row g-3">
@@ -104,32 +104,34 @@
 
     <div class="map__container">
         <span>
-            <p class="p__maps">Nos encontramos aca</p>
+            <p class="map__p">Encontranos en</p>
+            <p class="map__p--descr">Av. Rivarola 7042, Rosario, Santa Fe</p>
         </span>
         <span>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13389.759736029488!2d-60.7157828!3d-32.9657932!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x392b75d8a4075dde!2sCross%20Gym!5e0!3m2!1ses-419!2sar!4v1661812987066!5m2!1ses-419!2sar" height="300" width="300" ></iframe>
         </span>
     </div>
 
-    <section>
-        <form class="form">
-            <h3>Feedback</h3>
-            <p class="opinion">Dejanos una opinion</p>
-            <div class="input-group">
-                <label class="label">Nombre</label>
-                <input class="input" id="name" type="text" name="name">
-                <div></div>
+    <section class="form_section">
+        <form>
+            <h4 style="padding-top: 10px">Feedback</h4>
+            <p>Dejanos tu opinion</p>
+            <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control bg-black bg-opacity-10" id="exampleFormControlInput1" name="name">
             </div>
-            <div class="input-group">
-                <label class="label">Email</label>
-                <input class="input" id="Email" type="email" name="Email">
-                <div></div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="text" class="form-control bg-black bg-opacity-10" id="exampleFormControlInput1" name="email">
             </div>
-            <div class="input-group">
-                <label class="label">textarea</label>
-                <textarea></textarea>
-                <div></div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Opinión</label>
+                <textarea class="form-control bg-black bg-opacity-10" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
+            <div>
+                <a href="#">
+                    <button>Enviar</button>
+            </div></a>
         </form>
         
     </section>

@@ -5,50 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contacto</title>
 </head>
 
 <body class="contacto_body">
-    <header>
-        <nav class="navBar">
-            <ul>
-                <li class="logo">CROSSGYM</li>
-                <li><a href="../index.html">Inicio</li></a>
-                <li><a href="planes.html">Planes</li></a>
-                <li><a href="equipo.html">Equipo</li></a>
-                <li><a href="contacto.html">Contacto</li></a>
-                <li><a href="redes.html">Redes</li></a>
-            </ul>
-            
-        </nav>
-    </header>
+        <header>
+            <nav class="navBar">
+                <ul>
+                    <li class="logo">CROSSGYM</li>
+                    <li class="nav-li"><a href="../index.html">Inicio</li></a>
+                    <li class="nav-li"><a href="./planes.html">Planes</li></a>
+                    <li class="nav-li"><a href="./equipo.html">Equipo</li></a>
+                    <li class="nav-li"><a href="./contacto.html">Contacto</li></a>
+                    <li class="nav-li"><a href="./redes.html">Redes</li></a>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="contacto">
+            <p class="contacto_title">Contactanos</p>
+        </section>
 
- <section class="contacto">
-     <p class="contacto_title">Contactanos</p>
-     <article>
-      <p> Si querés arrancar el GYM, saber mas sobre nuestras clases o necesitas un plan nutricional, no dudes en escribirnos!</p>
-    </article>
- </section>
- <section class="form">
-    <form>
-        <p>Nombre</p>
-        <input type="text" name="name">
-        <p>Email</p>
-        <input type="text" name="email">
-        <p>Numero de telefono</p>
-        <input type="number">
-        <p>Mensaje</p>
-        <textarea></textarea>
-    </form>
- </section>
+        <section class="form_section" style="margin-top: 10px">
+            <form>
+                <h4 style="padding-top: 10px">Feedback</h4>
+                <p> Si querés arrancar el GYM, saber mas sobre nuestras clases o necesitas un plan nutricional, no dudes en escribirnos!
+                </p>
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input type="text" class="form-control bg-black bg-opacity-10" id="exampleFormControlInput1" name="name">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control bg-black bg-opacity-10" id="exampleFormControlInput1" name="email">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Numero de telefono</label>
+                    <input type="number" class="form-control bg-black bg-opacity-10" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                    <textarea class="form-control bg-black bg-opacity-10" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div>
+                    <a href="#">
+                        <button>Enviar</button>
+                </div></a>
+            </form>
+        
+        </section>
+        
+        <footer>
+            <div class="foot">
+                <span class="foot__container">
+                    <img src="../img/gym_logo.png" alt="gym_logo">
+                </span>
+            </div>
+        </footer>
 
- <footer>
-    <div class="foot">
-        <span class="foot__container">
-            <img src="../img/gym_logo.png" alt="gym_logo">
-        </span>
-    </div>
- </footer>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
