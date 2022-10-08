@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* cambiar font-family */
+  font-family: sans-serif;
+}
+
+.logo {
+  color: #000;
+  font-size: 50px;
+  line-height: 100px;
+  font-weight: bolder;
+  font-style: italic;
+  margin-right: auto;
+}
+
+.navBar {
+  width: 100%;
+  height: 100px;
+  background-color: yellow;
+  border-bottom: 1px solid #000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul li {
+  line-height: 100px;
+  list-style: none;
+}
+nav ul li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.nav-li a:hover {
+  background: rgba(0, 0, 0, 0.678);
+  color: yellow;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+
+.nav__label,
+.nav__input {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .navBar .nav__label {
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .nav__label {
+    display: block;
+  }
+  .nav__input {
+    display: block;
+    visibility: hidden;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+  nav ul {
+    width: 100%;
+    background-color: yellow;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 50;
+    -webkit-clip-path: circle(0 at center);
+            clip-path: circle(0 at center);
+    transition: 0.5s;
+  }
+  .nav__input:checked + ul {
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+}
+div.gym_title {
+  height: 380px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+main {
+  background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(36, 30, 1, 0.5)), url("../img/gym_bg_image.jpeg");
+  height: 650px;
+  width: auto;
+  margin-bottom: 25px;
+}
+
+.buttonPosition {
+  height: 120px;
+  display: flex;
+  align-content: stretch;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 160px;
+  height: 60px;
+  background-color: #000;
+  color: yellow;
+  border-radius: 9px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.buttonStart {
+  text-decoration: none;
+  color: yellow;
+}
+
+button:hover {
+  width: 165px;
+  height: 65px;
+  color: #000;
+  background-color: yellow;
+  border: none;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.container__clases--cards {
+  margin: 50px 0;
+}
+
+.map__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 10px;
+}
+
+.map__p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.opinion,
+form {
+  margin: 0px 15px;
+}
+
+/* Form */
+.form_section {
+  width: 50%;
+  margin: 100px;
+}
+
+/* Planes */
+.plan {
+  background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(36, 30, 1, 0.5)), url("../img/gym_bg_image.jpeg");
+  padding: 100px;
+}
+
+.row {
+  padding: 20px 0;
+}
+
+.card.card_planes {
+  width: 350px;
+  height: 400px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Equipo */
+.team_title {
+  font-size: 45px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.team {
+  display: flex;
+  padding: 0px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.team_cards {
+  padding: 25px;
+}
+.team_cards img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.team_cards--name {
+  font-weight: bold;
+}
+
+section.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto_title {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.redes_section--title {
+  font-size: 45px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.redes_section--descr {
+  display: flex;
+  justify-content: center;
+  line-height: 45px;
+}
+
+.redes_ico {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 30px;
+  background-color: #fff;
+  margin: 0 80px 0 80px;
+  padding: 80px;
+}
+
+.redes_ico--descr {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+}
+
+.redes_ico img {
+  width: 60px;
+  margin: 0 auto;
+}
+
+.foot {
+  background-color: #000;
+}
+
+.foot__container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+.foot__container img {
+  width: 90px;
+  height: auto;
+}/*# sourceMappingURL=styles.css.map */
