@@ -1,9 +1,9 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* cambiar font-family */
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo {
@@ -53,6 +53,11 @@ nav ul li a {
 }
 
 @media (max-width: 800px) {
+
+  .navBar {
+    height: 70px;
+  }
+
   .navBar .nav__label {
     display: flex;
     align-items: flex-end;
@@ -75,19 +80,20 @@ nav ul li a {
   nav ul {
     width: 100%;
     background-color: yellow;
-    border-radius: 20px;
     flex-direction: column;
     align-items: center;
     z-index: 50;
-    -webkit-clip-path: circle(0 at center);
-            clip-path: circle(0 at center);
-    transition: 0.5s;
+    -webkit-clip-path: inset(0 0 100% 0);
+            clip-path: inset(0 0 100% 0);
+    transition: 0.7s;
   }
   .nav__input:checked + ul {
-    -webkit-clip-path: circle(100% at center);
-            clip-path: circle(100% at center);
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
   }
+
 }
+
 div.gym_title {
   height: 380px;
   color: white;
