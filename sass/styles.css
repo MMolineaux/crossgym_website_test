@@ -1,9 +1,9 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
 }
 
 .logo {
@@ -53,11 +53,9 @@ nav ul li a {
 }
 
 @media (max-width: 800px) {
-
   .navBar {
     height: 70px;
   }
-
   .navBar .nav__label {
     display: flex;
     align-items: flex-end;
@@ -73,9 +71,9 @@ nav ul li a {
   }
   nav {
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    align-items: center;
   }
   nav ul {
     width: 100%;
@@ -84,16 +82,14 @@ nav ul li a {
     align-items: center;
     z-index: 50;
     -webkit-clip-path: inset(0 0 100% 0);
-            clip-path: inset(0 0 100% 0);
+    clip-path: inset(0 0 100% 0);
     transition: 0.7s;
   }
   .nav__input:checked + ul {
     -webkit-clip-path: inset(0 0 0 0);
-            clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
   }
-
 }
-
 div.gym_title {
   height: 380px;
   color: white;
@@ -160,6 +156,15 @@ h2 {
   margin: 15px 10px;
 }
 
+@media (max-width: 800px) {
+  .map__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 10px;
+  }
+}
 .map__p {
   font-size: 20px;
   font-weight: bold;
@@ -170,13 +175,12 @@ form {
   margin: 0px 15px;
 }
 
-/* Form */
 .form_section {
-  width: 50%;
-  margin: 100px;
+  width: 60%;
+  margin: 50px;
+  padding: 0 25px;
 }
 
-/* Planes */
 .plan {
   background: linear-gradient(rgba(0, 0, 0, 0.822), rgba(36, 30, 1, 0.5)), url("../img/gym_bg_image.jpeg");
   padding: 100px;
@@ -197,7 +201,16 @@ form {
   justify-content: space-evenly;
 }
 
-/* Equipo */
+.divider {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .divider {
+    display: block;
+    height: 50px;
+  }
+}
 .team_title {
   font-size: 45px;
   font-weight: bold;
@@ -252,24 +265,29 @@ section.contacto {
 
 .redes_ico {
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 40% 20%;
   gap: 30px;
   background-color: #fff;
-  margin: 0 80px 0 80px;
-  padding: 80px;
+  margin: 80px 0px;
 }
-
-.redes_ico--descr {
+.redes_ico a {
   display: flex;
   align-items: center;
+  color: #000;
   font-size: 2em;
 }
-
 .redes_ico img {
   width: 60px;
   margin: 0 auto;
 }
 
+@media (max-width: 800px) {
+  .redes_ico {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    margin: 60px 0px;
+  }
+}
 .foot {
   background-color: #000;
 }
